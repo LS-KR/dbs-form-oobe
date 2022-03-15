@@ -1,0 +1,44 @@
+﻿<Window x:Class="dbs_form.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dbs_form"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="Dr_Black System Data Collection Tool" Height="640" Width="854" MinWidth="854" MinHeight="640" MaxWidth="854" MaxHeight="640" KeyDown="Window_KeyDown" Icon="uplog.ico">
+    <Grid Background="#FF66CCFF">
+        <Image x:Name="picturebox" HorizontalAlignment="Left" Height="120" Margin="20,20,0,0" VerticalAlignment="Top" Width="814" Source="Title.png"/>
+        <Grid x:Name="Frames" HorizontalAlignment="Left" Height="410" Margin="20,180,0,0" VerticalAlignment="Top" Width="674">
+            <Label x:Name="Lwelcome" Content="欢迎使用Dr_Black System" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontSize="24"/>
+            <Label x:Name="Lcontinue" Content="要继续，请点击“下一步”" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="60,55,0,0" VerticalAlignment="Top" Width="287" FontSize="24"/>
+            <Image x:Name="ILoading" HorizontalAlignment="Left" Height="40" Margin="102,50,0,0" VerticalAlignment="Top" Width="470" Source="R-C.gif" gif:ImageBehavior.AnimatedSource="R-C.gif"/>
+            <Label x:Name="Lweb" Content="正在检查网络连接..." TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontSize="24"/>
+            <Label x:Name="Lnoweb" Content="未连接到服务器，本程序将在10秒内退出..." TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="501" FontSize="24"/>
+            <Label x:Name="Lbirth" Content="请输入您的生日" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontSize="24"/>
+            <TextBox x:Name="Tm" HorizontalAlignment="Left" Height="40" Margin="60,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80" FontSize="24" TextAlignment="Right" Background="#FFFFFFFF"/>
+            <Label x:Name="Lm" Content="月" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="140,55,0,0" VerticalAlignment="Top" Width="40" FontSize="24"/>
+            <TextBox x:Name="Td" HorizontalAlignment="Left" Height="40" Margin="180,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80" FontSize="24" TextAlignment="Right" Background="#FFFFFFFF"/>
+            <Label x:Name="Ld" Content="日" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="260,55,0,0" VerticalAlignment="Top" Width="40" FontSize="24"/>
+            <Label x:Name="Lload" Content="正在收集信息..." TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontSize="24"/>
+            <Label x:Name="Lnotice" Content="我们将上传您的信息，包括但不限于系统名称、计算机名、" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="654" FontSize="24"/>
+            <Label x:Name="Lnotice2" Content="您的DBSID(Dr_Black System ID)。" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,50,0,0" VerticalAlignment="Top" Width="654" FontSize="24"/>
+            <Label x:Name="Lnotice3" Content="此过程将不会涉及您的隐私。" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,90,0,0" VerticalAlignment="Top" Width="654" FontSize="24"/>
+            <Label x:Name="Lnotice4" Content="要继续，请按“下一步”，否则请按“取消”" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,130,0,0" VerticalAlignment="Top" Width="654" FontSize="24"/>
+            <Label x:Name="Lupload" Content="正在上传..." TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="287" FontSize="24"/>
+            <Label x:Name="Lend1" Content="上传工作已以预定进程结束" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,50,0,0" VerticalAlignment="Top" Width="654" FontSize="24"/>
+            <Label x:Name="Lend2" Content="按“下一步”退出" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="40" Margin="10,90,0,0" VerticalAlignment="Top" Width="654" FontSize="24"/>
+
+        </Grid>
+        <Grid Margin="714,180,12,109">
+            <Label x:Name="Pa1" Content="欢迎" TextBlock.Foreground="#FFFFFF00" HorizontalAlignment="Left" Height="25" Width="89" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="12"/>
+            <Label x:Name="Pa2" Content="收集信息" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="25" Width="89" Margin="10,35,0,0" VerticalAlignment="Top" FontSize="12"/>
+            <Label x:Name="Pa3" Content="上传准备" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="25" Width="89" Margin="10,60,0,0" VerticalAlignment="Top" FontSize="12"/>
+            <Label x:Name="Pa4" Content="上传信息" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="25" Width="89" Margin="10,85,0,0" VerticalAlignment="Top" FontSize="12"/>
+            <Label x:Name="Pa5" Content="完成" TextBlock.Foreground="#FFFFFFFF" HorizontalAlignment="Left" Height="25" Width="89" Margin="10,110,0,0" VerticalAlignment="Top" FontSize="12"/>
+        </Grid>
+        <Button x:Name="BNext" Content="下一步" HorizontalAlignment="Left" Height="40" Margin="714,550,0,0" VerticalAlignment="Top" Width="120" Click="BNext_Click"/>
+        <Button x:Name="BCancel" Content="取消" HorizontalAlignment="Left" Height="40" Margin="714,505,0,0" VerticalAlignment="Top" Width="120" Click="BCancel_Click"/>
+        
+    </Grid>
+</Window>
